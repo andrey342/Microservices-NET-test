@@ -1,0 +1,14 @@
+﻿global using MediatR;
+global using UserManagement.Domain.AggregatesModel.UserAggregate;
+global using UserManagement.Domain.AggregatesModel.ServiceContractAggregate;
+global using UserManagement.Domain.AggregatesModel.WorkCenterAggregate;
+global using UserManagement.Domain.AggregatesModel.UserAggregate.Masters;
+global using UserManagement.Domain.AggregatesModel.ServiceContractAggregate.Masters;
+global using UserManagement.Domain.SeedWork;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Storage;
+global using IntegrationEventLog;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using UserManagement.Infrastructure.Idempotency;
+global using Microsoft.Extensions.DependencyInjection;
+global using UserManagement.Domain.Repositories;

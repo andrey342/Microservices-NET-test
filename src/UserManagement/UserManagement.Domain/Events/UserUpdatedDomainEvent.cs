@@ -1,0 +1,18 @@
+﻿using UserManagement.Domain.SeedWork;
+
+namespace UserManagement.Domain.Events;
+public class UserUpdatedDomainEvent: IDomainEvent
+{
+    public Guid UserId { get; }
+    public string Name { get; }
+    public string Email { get; }
+    public DateTime OccurredOn { get; }
+
+    public UserUpdatedDomainEvent(Guid userId, string name, string email)
+    {
+        UserId = userId;
+        Name = name;
+        Email = email;
+        OccurredOn = DateTime.UtcNow;
+    }
+}

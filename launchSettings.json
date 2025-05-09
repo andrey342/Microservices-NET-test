@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchServiceName": "workcenter-management-api-service",
+      "composeLaunchUrl": "http://localhost:32700",
+      "serviceActions": {
+        "user-management-api-service": "StartDebugging",
+        "workcenter-management-api-service": "StartDebugging",
+        "api-gateway-service": "StartDebugging",
+        "swagger-combine": "StartDebugging",
+        "nginx": "StartDebugging"
+      }
+    }
+  }
+}

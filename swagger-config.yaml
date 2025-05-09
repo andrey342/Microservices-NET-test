@@ -1,0 +1,7 @@
+openapi: "3.0.1"
+info:
+  title: "Asisto TAD swagger"
+  version: "1.0"
+
+apis:
+  - url: http://api-gateway-service:8080/swagger/v1/swagger.json  # Swagger del API Gateway
